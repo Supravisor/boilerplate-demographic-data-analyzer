@@ -26,7 +26,7 @@ def calculate_demographic_data(print_data=True):
     num_lower_education = lower_education[lower_education.salary == '>50K'].size
 
     higher_education_rich = round(num_higher_education / higher_education.size * 100, 1)
-    lower_education_rich = None
+    lower_education_rich = round(num_lower_education / lower_education.size * 100, 1)
 
     # What is the minimum number of hours a person works per week (hours-per-week feature)?
     min_work_hours = None
