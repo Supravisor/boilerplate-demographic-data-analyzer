@@ -22,6 +22,8 @@ def calculate_demographic_data(print_data=True):
     lower_education = df[~df.education.isin(['Bachelors', 'Masters', 'Doctorate'])]
 
     # percentage with salary >50K
+    num_higher_education = higher_education[higher_education.salary == '>50K'].size
+
     higher_education_rich = None
     lower_education_rich = None
 
